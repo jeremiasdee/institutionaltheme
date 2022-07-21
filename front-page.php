@@ -1,11 +1,11 @@
 <?php get_header();?>
 
     <div class="container pt-5 pb-5">
-        <h1> Welcome to the site </h1>
+        <h1> Latest News </h1>
 
         <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>      
 
-            <div class="card mb-3">
+            <div class="card mb-3" id="post-<?php the_ID();?>" >
                 <div class="card-body">
                     <div class="row">
 

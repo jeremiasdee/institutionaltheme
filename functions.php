@@ -1,6 +1,17 @@
 <?php 
 
-add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails', 'menus' );
+
+add_action( 'init', 'register_menus' );
+
+function register_menus() {
+    register_nav_menus( 
+        array (
+            'Primary Menu' => __('Primary Menu'),
+            'Secondary Menu' => __('Secondary Menu')
+            )
+        );
+}
 
 // Load Styles
 
