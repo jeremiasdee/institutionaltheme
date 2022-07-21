@@ -7,3 +7,13 @@ Tags: portfolio, institutional, responsive, simple
 Author: Jeremías Delupi
 Author URI: https://www.linkedin.com/in/jeremiasdelupi
 */
+
+body {
+    background: #ccc;
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+}
